@@ -1,0 +1,232 @@
+html {
+	background-color:black;
+}
+
+body{
+	font-family:'Hp Simplified';
+	padding:0px;
+	padding-bottom:0px;
+	margin:0;
+	background-color:white;
+}
+
+#marquee{
+	background:url("../images/chicago-img-03.jpg") no-repeat center center;
+	padding-top:0px;
+	margin:0px 0px 20px 0px;
+	height:700px;
+	-moz-transition:background 2s ease-in-out;
+}
+
+#header{
+	padding-top:10px;
+	padding-bottom:10px;
+	background-color:#000000;
+	opacity:0.4;
+	position:fixed;
+	top:0px;
+	right:0px;
+	left:0px;
+}
+
+nav li{
+	display: inline;
+	margin-left:105px;
+	margin-right:105px;
+}
+
+nav li a{
+	color: #ffffff;
+	text-decoration: none;
+	border-bottom: 1px solid black;
+}
+
+nav li.white-nav-elt a:hover{
+	border-bottom-color: red;
+}
+
+#chicago a {
+	color: red;
+}
+
+h2, h3, #empty{
+	color: white;
+	position:relative;
+	top:300px;
+	left:20px;
+}
+
+h2{
+	text-transform: uppercase;
+	font-weight: 200;
+}
+
+#empty{
+	border-bottom: 1px solid red;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	width: 5%;
+}
+
+h3{
+	font-weight:normal;
+	font-size: 100%;
+}
+
+#scroll-down{
+	color: #ffffff;
+	width:100px;
+	position:fixed;
+	top:92%;
+	margin-left:45%;
+}
+
+#aside{
+	color: #ffffff;
+	width:300px;
+	position:relative;
+	top:150px;
+	left:1000px;
+	text-align:right;
+}
+
+#aside-list{
+	list-style-type:none;
+}
+
+p.dash{
+	display:inline;
+	margin-left:10px;
+	font-weight:bold;
+	visibility:hidden;
+}
+
+aside a{
+	color: #ffffff;
+	text-decoration:none;
+}
+
+img.news-img {
+	display:block;
+	width:430px;
+	height:280px;
+}
+
+.news-paragraph {
+	border-top:1px solid black;
+	border-bottom:1px solid black;
+	padding-top:10px;
+	padding-bottom:70px;
+	margin-top:5px;
+	margin-bottom:10px;
+}
+
+h4 {
+	margin-bottom: 0px;
+}
+
+#news-section {
+	border-top:1px solid black;
+	padding-top:20px;
+	margin-left:5px;
+	margin-right:5px;
+	column-count:3;
+	-moz-column-count:3;
+	column-gap:30px;
+}
+
+#menu-mobile-ui {
+	visibility:hidden;
+	display:inline;
+	text-transform:uppercase;
+	float:right;
+	margin-top:-90px;
+	margin-right:10px;
+	cursor:pointer;
+	background:black;
+	opacity:0.4;
+	color:white;
+	letter-spacing:0.05em;
+	font-size:1.3em;
+	font-family:'Hp Simplified';
+	-moz-border-radius:10px;
+	border-radius:30px;
+}
+
+#nav-list{
+	margin-right:0px;
+	padding-right:0px;
+}
+
+.nav{
+	width:1400px;
+}
+
+
+/* For mobile UI */
+@media screen and (max-width: 800px){
+
+	html {
+		background-color:white;
+	}
+
+	#marquee{
+		background:url("../images/chicago-img-03.jpg") no-repeat center center;
+		padding-top:0px;
+		margin:0px;
+		height:0px;
+	}
+
+	#marquee-section{
+		visibility:hidden;
+	}
+	
+	#menu-mobile-ui {
+		visibility:visible;
+		margin-top:-40px;
+		margin-right:20px;
+		opacity:0.7;
+	}
+	
+	nav li.white-nav-elt {
+		display: block;
+		margin-left:105px;
+		margin-right:0px;
+		display:none;
+	}
+	
+	#nav-list{
+		margin-right:0px;
+		padding-right:0px;
+	}
+	
+	.nav-elt {
+		letter-spacing:0.2em;
+		margin-top:5px;
+		margin-bottom:5px;
+		font-size:1.3em;
+	}
+	
+	.nav{
+		width:80%;
+	}	
+	
+	#news-section {
+		border-top:0px solid black;
+		padding-top:40px;
+		column-count:1;
+		-moz-column-count:1;
+	}
+	
+	img.news-img {
+		width:100%;
+		height:280px;
+	}	
+	
+	#header{
+		width:100%;
+		padding-top:0px;
+		padding-bottom:0px;
+		opacity:0.7;
+	}
+}
